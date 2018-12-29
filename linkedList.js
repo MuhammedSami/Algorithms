@@ -15,6 +15,7 @@ class LinkedList{
 		this.head = newNode;
 		this.length++;
 	}
+
 	addToHead(...values) {
 		values.forEach(value => this._addSinleItemToHead(value));
 		return this;
@@ -44,11 +45,12 @@ class LinkedList{
 	}
 
 	remove(val) {
-		if(this.length === 0 ){
+
+		if( this.length === 0 ){
 			return undefined;
 		}
 
-		if(this.head.value === val) {
+		if( this.head.value === val ) {
 			this.removeFromHead();
 			return this;
 		}
@@ -114,9 +116,9 @@ class LinkedList{
 
 				NodeToadd = ( NodeIndex2 === index ) ? val
 
-				NodeToMove = thisNode.value;
+				NodeToMove 	   = thisNode.value;
 				thisNode.value = NodeToadd;
-				thisNode.next = NodeToMove;
+				thisNode.next  = NodeToMove;
 
 			}
 			thisNode = thisNode.next;
@@ -125,7 +127,7 @@ class LinkedList{
 	}
 }
 
-const list = new LinkedList('first','secobde','third');
+const list = new LinkedList('first','seconde','third');
 const found = list.find('second');
 const removed = list.remove('fourth');
 list.addAtIndex(2,'test');
