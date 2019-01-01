@@ -3,7 +3,7 @@ const MAXLENGTH = 50;
 
 /**
 * Hash tables data structures are used in compilation,caching,password,authentication etc.
-* I ve user open addresing method. Chainin method have several disandvatages.
+* I ve usera open addresing method. Chainin method have several disandvatages.
 * I might did some errors of usind please let me know. 
 **/
 class HashTable{
